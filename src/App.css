@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+body{
+  margin : 0px;
+  font-family: 'Poppins', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.navbar{
+  color : white;
+  background-image: linear-gradient(to right, rgb(82, 61, 82) , rgb(188, 93, 218));
+  display : flex ;
   align-items: center;
+  justify-content: space-between;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  height: 70px;
+  margin: 10px;
+}
+
+.navbar--project{
+  font-size : 12px;
+  margin-right : 20px;
+}
+
+.form{
+  display : grid;
+  grid-template : 40px 40px / 1fr 1fr;
+  gap : 17px;
+}
+
+.for--input{
+border-radius : 5px;
+border : 1px solid black;
+}
+
+.form--button{
+  color : white;
+  grid-column : 1 / -1;
+  border-radius : 5px;
+  background-image: linear-gradient(to right, rgb(82, 61, 82) , rgb(188, 93, 218));
+  cursor : pointer;
+}
+section{
+  padding: 36px;
+}
+
+.meme--div{
+  font-size: 25px;
+  margin-top : 10px;
+  display: flex;
+  position: relative;
+  /* align-items: center; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* background-color: aqua; */
 }
 
-.App-link {
-  color: #61dafb;
+.meme--image{
+  max-height: 400px;
+  /* max-width: 300px; */
+  margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meme--text-top{
+  color : white;
+  position: absolute;
+  text-shadow: rgb(0, 0, 0) 3px 0px 0px,
+  rgb(0, 0, 0) 2.83487px 0.981584px 0px,
+  rgb(0, 0, 0) 2.35766px 1.85511px 0px,
+  rgb(0, 0, 0) 1.62091px 2.52441px 0px,
+  rgb(0, 0, 0) 0.705713px 2.91581px 0px,
+  rgb(0, 0, 0) -0.287171px 2.98622px 0px,
+  rgb(0, 0, 0) -1.24844px 2.72789px 0px,
+  rgb(0, 0, 0) -2.07227px 2.16926px 0px,
+  rgb(0, 0, 0) -2.66798px 1.37182px 0px,
+  rgb(0, 0, 0) -2.96998px 0.42336px 0px,
+  rgb(0, 0, 0) -2.94502px -0.571704px 0px,
+  rgb(0, 0, 0) -2.59586px -1.50383px 0px,
+  rgb(0, 0, 0) -1.96093px -2.27041px 0px,
+  rgb(0, 0, 0) -1.11013px -2.78704px 0px,
+  rgb(0, 0, 0) -0.137119px -2.99686px 0px,
+  rgb(0, 0, 0) 0.850987px -2.87677px 0px,
+  rgb(0, 0, 0) 1.74541px -2.43999px 0px,
+  rgb(0, 0, 0) 2.44769px -1.73459px 0px,
+  rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+  /* left : 200px;
+  top : 40px; */
+  
+}
+.meme--text-bottom{
+  color : white;
+  position: absolute;
+  text-shadow: rgb(0, 0, 0) 3px 0px 0px,
+  rgb(0, 0, 0) 2.83487px 0.981584px 0px,
+  rgb(0, 0, 0) 2.35766px 1.85511px 0px,
+  rgb(0, 0, 0) 1.62091px 2.52441px 0px,
+  rgb(0, 0, 0) 0.705713px 2.91581px 0px,
+  rgb(0, 0, 0) -0.287171px 2.98622px 0px,
+  rgb(0, 0, 0) -1.24844px 2.72789px 0px,
+  rgb(0, 0, 0) -2.07227px 2.16926px 0px,
+  rgb(0, 0, 0) -2.66798px 1.37182px 0px,
+  rgb(0, 0, 0) -2.96998px 0.42336px 0px,
+  rgb(0, 0, 0) -2.94502px -0.571704px 0px,
+  rgb(0, 0, 0) -2.59586px -1.50383px 0px,
+  rgb(0, 0, 0) -1.96093px -2.27041px 0px,
+  rgb(0, 0, 0) -1.11013px -2.78704px 0px,
+  rgb(0, 0, 0) -0.137119px -2.99686px 0px,
+  rgb(0, 0, 0) 0.850987px -2.87677px 0px,
+  rgb(0, 0, 0) 1.74541px -2.43999px 0px,
+  rgb(0, 0, 0) 2.44769px -1.73459px 0px,
+  rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+  top : 250px;
 }
